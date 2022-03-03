@@ -38,8 +38,7 @@ double expn(double x, uint16_t count) {
 double sinn(double x, uint16_t count) {
     double e = 0;
     for (uint16_t c = 1; c <= count; c++) {
-        e += pown(-1,c-1) * (pown(x, (2 * c)-1) / fact((2 * c) - 1));
-        std::cout << e << std::endl;
+        e += pown(-1, c-1) * (pown(x, (2 * c)-1) / fact((2 * c) - 1));
     }
     return  e;
 }
